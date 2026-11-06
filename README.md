@@ -1,4 +1,4 @@
-# Jordi NetTools
+# jpl NetTools · v1.6.1
 
 **Herramientas prácticas de redes y soporte IT · JPL Network · Jordi Pérez Llorà**
 
@@ -21,6 +21,10 @@ Abre la aplicación y selecciona una herramienta en el menú o búscala por nomb
 
 El planificador permite exportar CSV, guardar y recuperar proyectos JSON e imprimir el plan. Los informes de incidencias se pueden descargar como TXT. **No hay guardado automático:** descarga los proyectos que quieras conservar.
 
+Cinco herramientas incluyen botones **Cargar ejemplo** y **Restablecer**: solapamientos, comparación de configuraciones, análisis de salidas, informes de incidencias y planificador de sede. Los ejemplos utilizan datos ficticios. Antes de reemplazar datos introducidos se solicita confirmación.
+
+El menú agrupa las herramientas por función y las numera del 01 al 14. En móvil se muestra completo, sin desplazamiento interno.
+
 ## Ejemplo práctico
 
 Divide `192.168.1.0/24` entre departamentos de `60, 25, 10, 2` hosts. El planificador VLSM asigna bloques de mayor a menor tamaño y comprueba que caben en la red base. En el planificador de sede se añade además una dirección para el gateway de cada departamento.
@@ -38,7 +42,16 @@ Divide `192.168.1.0/24` entre departamentos de `60, 25, 10, 2` hosts. El planifi
 
 La lógica dispone de pruebas locales para IPv4, VLSM, solapamientos, máscaras, VLAN, planificación/importación, pertenencia IP, diferencias y patrones de análisis. Los archivos de prueba todavía no forman parte de este repositorio público.
 
-Revisión de la web publicada el 6 de noviembre de 2026: navegación de las 14 vistas, búsqueda sin acentos, errores de IPv4 y capacidad del planificador, apertura/cierre del diálogo y revisión del planificador a ancho móvil. No se observaron errores de JavaScript durante ese recorrido. Queda pendiente la comprobación completa de descargas, importación e impresión, así como pruebas en dispositivos de red reales.
+Revisión de la web publicada el 6 de noviembre de 2026: navegación de las 14 vistas, búsqueda sin acentos, errores de IPv4 y capacidad del planificador, apertura/cierre del diálogo y revisión del planificador a ancho móvil. No se observaron errores de JavaScript durante ese recorrido. En la revisión manual guiada, el autor confirmó la descarga y recuperación de proyectos JSON, la apertura de CSV en Excel, la impresión a PDF sin columnas cortadas, la descarga de informes TXT y el funcionamiento de los ejemplos y del restablecimiento. También confirmó el menú completo en su móvil. Estas comprobaciones cubren los casos revisados, no todas las combinaciones de datos o navegadores. No se han realizado pruebas en dispositivos de red reales.
+
+## Mejoras y errores
+
+Puedes comunicar fallos o proponer mejoras en [GitHub Issues](https://github.com/JPL-NETWORK/jpl-nettools/issues). Indica la herramienta, el resultado esperado y lo que ocurrió; utiliza datos ficticios y evita incluir información de clientes o credenciales.
+
+## Últimos cambios
+
+- v1.6: ejemplos y restablecimiento en cinco herramientas, historial y enlace a incidencias.
+- v1.6.1 y ajustes de presentación: marca jpl NetTools, numeración consecutiva, portada «Herramientas para Networking» y menú móvil completo.
 
 ## Autor
 
